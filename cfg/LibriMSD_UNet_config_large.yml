@@ -1,0 +1,60 @@
+model: 
+  name: UNet
+  stride: 2
+  kernel_size: 5
+  mask_logit: no
+# Training config
+training:
+  data_ratio: 1.
+  epochs: 10
+  batch_size: 192
+  num_workers: 10
+  half_lr: yes
+  early_stop: no
+  multi_speakers: yes
+  multi_speakers_frequency: 5
+  normalize: no # the model will normalize, not the dataloader
+  loss: LogL2Time
+optim:
+  optimizer: adam
+  lr: 0.0001
+  weight_decay: 0.00001
+  patience: 3
+  lr_decay_patience: 2
+  lr_decay_gamma: 0.3
+  weight_decay: 0.00001
+# Data config
+data:
+  original_sample_rate: 8000
+  fft_size: 1024
+  window_size: 1024
+  hop_size: 558
+  speech_train_dir:
+    - /path/to/LibriSpeech8k/train-clean-360
+    - /path/to/mls_dutch_opus8k/train
+    - /path/to/mls_french_opus8k/train
+    - /path/to/mls_german_opus8k/train
+    - /path/to/mls_italian_opus8k/train
+    - /path/to/mls_polish_opus8k/train
+    - /path/to/mls_portuguese_opus8k/train
+    - /path/to/mls_spanish_opus8k/train
+  speech_valid_dir:
+    - /path/to/LibriSpeech8k/dev-clean
+    - /path/to/mls_dutch_opus8k/dev
+    - /path/to/mls_french_opus8k/dev
+    - /path/to/mls_german_opus8k/dev
+    - /path/to/mls_italian_opus8k/dev
+    - /path/to/mls_polish_opus8k/dev
+    - /path/to/mls_portuguese_opus8k/dev
+    - /path/to/mls_spanish_opus8k/dev
+  music_train_dir:
+    - /path/to/millionsong8k/train
+  music_valid_dir:
+    - /path/to/millionsong8k/valid
+  sample_rate: 8000
+  n_src: 2
+  segment: 9
+neptune:
+  expname: 
+  project: 
+  api-key: 

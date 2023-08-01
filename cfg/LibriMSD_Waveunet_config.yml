@@ -1,0 +1,72 @@
+model: 
+  name: Waveunet
+  features: 32
+  feature_growth: double
+  stride: 4
+  kernel_size: 5
+  channels: 1
+  depth: 1
+  levels: 6
+  conv_type: gn
+  res: fixed
+  separate: yes
+# Training config
+training:
+  data_ratio: 0.03
+  new_data: yes
+  epochs: 40
+  batch_size: 8
+  num_workers: 18
+  half_lr: yes
+  early_stop: no
+  multi_speakers: yes
+  multi_speakers_frequency: 5
+  normalize: no # the model will normalize, not the dataloader
+  loss: LogL2Time
+optim:
+  optimizer: adam
+  lr: 0.0001
+  min_lr: 0.00005
+  cycles: 2
+  weight_decay: 0.00001
+  patience: 3
+  lr_decay_patience: 2
+  lr_decay_gamma: 0.3
+# Data config
+data:
+  original_sample_rate: 8000
+  fft_size: 1024
+  window_size: 1024
+  hop_size: 558
+  speech_train_dir:
+    - /path/to/LibriSpeech8k/train-clean-360
+    - /path/to/mls_dutch_opus8k/train
+    - /path/to/mls_french_opus8k/train
+    - /path/to/mls_german_opus8k/train
+    - /path/to/mls_italian_opus8k/train
+    - /path/to/mls_polish_opus8k/train
+    - /path/to/mls_portuguese_opus8k/train
+    - /path/to/mls_spanish_opus8k/train
+  speech_valid_dir:
+    - /path/to/LibriSpeech8k/dev-clean
+    - /path/to/mls_dutch_opus8k/dev
+    - /path/to/mls_french_opus8k/dev
+    - /path/to/mls_german_opus8k/dev
+    - /path/to/mls_italian_opus8k/dev
+    - /path/to/mls_polish_opus8k/dev
+    - /path/to/mls_portuguese_opus8k/dev
+    - /path/to/mls_spanish_opus8k/dev
+  music_train_dir:
+    - /path/to/millionsong8k/train
+  music_valid_dir:
+    - /path/to/millionsong8k/valid
+  sample_rate: 8000
+  n_src: 2
+  segment: 9
+  sources:
+    - speech
+    - music
+neptune:
+  expname: LibriMSD_Waveunet_config
+  project: 
+  api-key: 
