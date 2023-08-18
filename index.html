@@ -40,51 +40,6 @@
 </head>
 
 <body>
-  <script>
-    function play() {
-      var audio = document.getElementById("audio");
-      audio.play();
-    }
-  </script>
-  <!--nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>-->
 
 
   <section class="hero">
@@ -164,7 +119,7 @@
       </div>
     </div>
   </section>
-
+<!--
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
@@ -177,10 +132,7 @@
       </div>
     </div>
   </section>
-
-
-
-
+-->
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -200,19 +152,78 @@
         </div>
       </div>
       <!--/ Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-5">
+          <figure class="image is-5by4 mb-4">
+            <img src="./static/images/spectrograms/baf-query_0001.jpg">
+          </figure>
+          <audio controls>
+            <source src="./static/audios/baf/baf-query_0001.wav" type="audio/mpeg">
+          </audio>
+          <p>BAF query_0001.wav</p>
+        </div>
+      </div>
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-4">
+          <figure class="image is-5by4 mb-4">
+            <img src="./static/images/spectrograms/baf-ref_1072_snippet.jpg">
+          </figure>
+          <audio controls>
+            <source src="./static/audios/baf/baf-ref_1072_snippet.wav" type="audio/mpeg">
+          </audio>
+          <p>BAF ref_1072.wav</p>
+          <p>GT match from 0.0-33.0s in query_0001</p>
+        </div>
+        <div class="column is-4">
+          <figure class="image is-5by4 mb-4">
+            <img src="./static/images/spectrograms/baf-ref_0027_snippet.jpg">
+          </figure>
+          <audio controls>
+            <source src="./static/audios/baf/baf-ref_0027_snippet.wav" type="audio/mpeg">
+          </audio>
+          <p>BAF ref_0027.wav</p>
+          <p>GT match from 40.4-59.9s in query_0001</p>
+        </div>
+      </div>
 
-      <audio controls>
-        <source src="./static/audios/ssafp_examples/demucs-query_0001.wav" type="audio/mpeg">
-      </audio>
-      <p>Demucs</p>
-      <audio controls>
-        <source src="./static/audios/ssafp_examples/denoiser-query_0001.wav" type="audio/mpeg">
-      </audio>
-      <p>Denoiser</p>
-      <audio controls>
-        <source src="./static/audios/ssafp_examples/dwave-query_0001.wav" type="audio/mpeg">
-      </audio>
-      <p>Dwave</p>
+      <div class="columns is-centered has-text-centered"> <!--has-text-weight-bold-->
+        <div class="column">
+          <figure class="image is-5by4 mb-4">
+            <img src="./static/images/spectrograms/baf-query_0001.jpg">
+          </figure>
+          <audio controls>
+            <source src="./static/audios/ssafp/demucs-query_0001.wav" type="audio/mpeg">
+            </audio>
+            <p>Demucs</p>
+          </div>
+          <div class="column">
+            <figure class="image is-5by4 mb-4">
+              <img src="./static/images/spectrograms/baf-query_0001.jpg">
+            </figure>
+            <audio controls>
+              <source src="./static/audios/ssafp/denoiser-query_0001.wav" type="audio/mpeg">
+              </audio>
+              <p>Denoiser</p>
+        </div>
+        <div class="column">
+          <figure class="image is-5by4 mb-4">
+            <img src="./static/images/spectrograms/baf-query_0001.jpg">
+          </figure>
+          <audio controls>
+            <source src="./static/audios/ssafp/dwave-query_0001.wav" type="audio/mpeg">
+            </audio>
+            <p>Dwave</p>
+          </div>
+          <div class="column">
+            <figure class="image is-5by4 mb-4">
+              <img src="./static/images/spectrograms/baf-query_0001.jpg">
+            </figure>
+            <audio controls>
+              <source src="./static/audios/ssafp/moises-query_0001.wav" type="audio/mpeg">
+            </audio>
+            <p>Moises</p>
+          </div>
     </div>
   </section>
 
