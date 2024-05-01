@@ -1,4 +1,4 @@
-# Source Separation Models for Audio Fingerprinting.
+# Source Separation Models for Audio Fingerprinting
 
 This repository contains the code described in the publication "Enhanced TV Broadcast Monitoring with Source Separation-Assisted Audio Fingerprinting". Here you can find the code of the source separation models developed for the publication. The model checkpoints are hosted in a [GDrive folder](https://drive.google.com/drive/folders/1RFwT0moQcMSMxvI9bz6hR9tj6Gr6UTBL?usp=sharing) (about 600MB).
 
@@ -31,7 +31,14 @@ pip install -r requirements.txt
 ```
 
 # Usage
-#TODO
+**Training**
+```bash
+CUDA_VISIBLE_DEVICES=0,1 python train.py --config /path/to/cfg.yml
+```
+**Inference**
+```bash
+python predict.py --input_path /path/to/input/audios/ --model /path/to/best_model.pth --out_dir /path/to/output/dir/
+```
 
 # License
 * The code in this repository is licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
