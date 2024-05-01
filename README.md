@@ -13,7 +13,7 @@ And Datasets:
 * MillionSongDataset (MSD)
 * FSD50K
 
-🎶 👂 This repository also comes with a [webpage](https://guillemcort.es/ssafp/) where readers can listen to some examples of audios separated by the separation models.
+🎶 👂 This repository also comes with a [webpage](https://guillemcort.es/sepafp/) where readers can listen to some examples of audios separated by the separation models.
 
 # Installation
 The authors recommend the use of virtual environments.
