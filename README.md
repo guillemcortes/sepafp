@@ -9,6 +9,9 @@ To fully reproduce the work in the publication, other repositories might be need
 
 And Datasets:
 * BAF dataset: https://github.com/guillemcortes/baf-dataset
+* LibriSpeech
+* MillionSongDataset (MSD)
+* FSD50K
 
 
 # Installation
@@ -17,6 +20,7 @@ The authors recommend the use of virtual environments.
 **Requirements:**
 * Python 3.6+
 * Create virtual environment and install requirements
+
 ```bash
 git clone https://github.com/guillemcortes/ssafp.git
 cd ssafp
