@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Source Separation and Audio Fingerprinting for TV Broadcast Monitoring">
+  <meta name="description"
+    content="Enhanced TV Broadcast Monitoring with Source Separation-Assisted Audio Fingerprinting">
   <meta name="keywords" content="Source Separation, Audio Fingerprinting, Broadcast">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Source Separation and Audio Fingerprinting for TV Broadcast Monitoring</title>
@@ -40,15 +41,13 @@
 </head>
 
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Source Separation and Audio Fingerprinting for TV Broadcast
-              Monitoring</h1>
+            <h1 class="title is-1 publication-title">Enhanced TV Broadcast Monitoring with Source Separation-Assisted Audio
+              Fingerprinting</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://guillemcort.es">Guillem Cortès Sebastià</a><sup>1</sup><sup>2</sup>,</span>
@@ -136,13 +135,32 @@
 
   <section class="section">
     <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <p>
+          This web page accompanies the publication "Enhanced TV Broadcast Monitoring with Source Separation-Assisted Audio
+          Fingerprinting" by providing examples of the separation achieved with the tested algorithms so the reader can listen
+          to some examples for a better understanding of the publication. For more details about the publication and the code,
+          please refer to the <a href="https://github.com/guillemcortes/ssafp"> GitHub repository</a>.
+        </p>
+      </div>
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-            Audio fingerprinting (AFP) algorithms identify music in audio recordings. Traditionally, studies have focused on increasing their robustness to pitch and tempo alterations with a limited exploration into solutions for background music detection, which is crucial for ensuring proper royalty distribution in TV broadcasts, for instance. In this case study, we investigate if incorporating source separation as a preprocessing step before audio fingerprinting algorithms can enhance music identification. We study the impact of eight open-source algorithms, two private ones, and different trained models based on UNet and WaveUNet on both peak-based and neural AFPs. The results demonstrate that source separation algorithms directly enhance audio fingerprinting performance, particularly but not exclusively when music serves as background accompaniment.
+            Audio fingerprinting (AFP) algorithms identify music in audio recordings. Traditionally, studies have focused on
+            increasing the robustness of AFP systems to pitch and tempo alterations. On the other hand, solutions for background
+            music identification have been less explored even though they are crucial for ensuring proper royalty distribution in
+            television broadcasts, for instance. In this case study, we investigate whether incorporating source separation as a
+            preprocessing step before applying audio fingerprinting can enhance music identification. We study the impact of eight
+            public source separation algorithms, two private ones, and different trained models based on UNet and WaveUNet. We
+            evaluate them together with four public AFP algorithms and an additional AFP model trained for background music
+            identification. We also frame the study with a computational cost benchmark, which helps assessing the impact of
+            incorporating the source separation preprocessing. The results demonstrate that source separation algorithms directly
+            improve the audio fingerprinting performance in TV broadcast monitoring, directly contributing to better royalty
+            distribution. They also show that the enhancement is not only limited to background music but also to foreground music,
+            making this approach an interesting solution for other music identification use cases.
             </p>
           </div>
         </div>
