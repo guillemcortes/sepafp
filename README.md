@@ -9,9 +9,9 @@ To fully reproduce the work in the publication, other repositories might be need
 
 And Datasets:
 * BAF dataset: https://github.com/guillemcortes/baf-dataset
-* LibriSpeech
-* MillionSongDataset (MSD)
-* FSD50K
+* LibriSpeech: https://www.openslr.org/94/
+* MillionSongDataset (MSD): http://millionsongdataset.com/
+* FSD50K: https://zenodo.org/records/4060432
 
 🎶 👂 This repository also comes with a [webpage](https://guillemcort.es/sepafp/) where readers can listen to some examples of audios separated by the separation models.
 
