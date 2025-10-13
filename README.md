@@ -46,12 +46,28 @@ python predict.py --input_path /path/to/input/audios/ --model /path/to/best_mode
 # Citation
 Please cite the following [publication](https://doi.org/10.5281/zenodo.7372162) when using the dataset:
 
-> TBC
+Cortès-Sebastià, G., Miron, M., Molina, E. et al. Enhanced television broadcast monitoring with source separation-assisted audio fingerprinting: A case study. Multimed Tools Appl (2025). https://doi.org/10.1007/s11042-025-21080-x
 
 Bibtex version:
 
 ```
-TBC
+@article{cortes2025enhanced,
+author={Cort{\`e}s-Sebasti{\`a}, Guillem
+and Miron, Marius
+and Molina, Emilio
+and Ciurana, Alex
+and Serra, Xavier},
+title={Enhanced television broadcast monitoring with source separation-assisted audio fingerprinting: A case study},
+journal={Multimedia Tools and Applications},
+year={2025},
+month={Oct},
+day={13},
+issn={1573-7721},
+doi={10.1007/s11042-025-21080-x},
+url={https://doi.org/10.1007/s11042-025-21080-x}
+}
+
+
 ```
 
 # Acknowledgements
