@@ -1,6 +1,6 @@
 # Source Separation Models for Audio Fingerprinting
 
-This repository contains the code described in the publication "Enhanced TV Broadcast Monitoring with Source Separation-Assisted Audio Fingerprinting". Here you can find the code of the source separation models developed for the publication. The model checkpoints are hosted in a [GDrive folder](https://drive.google.com/drive/folders/1RFwT0moQcMSMxvI9bz6hR9tj6Gr6UTBL?usp=sharing) (about 600MB).
+This repository contains the code described in the publication "Enhanced television broadcast monitoring with source separation-assisted audio fingerprinting: A case study". Here you can find the code of the source separation models developed for the publication. The model checkpoints are hosted in a [GDrive folder](https://drive.google.com/drive/folders/1RFwT0moQcMSMxvI9bz6hR9tj6Gr6UTBL?usp=sharing) (about 600MB).
 
 To fully reproduce the work in the publication, other repositories might be needed:
 * Audfprint: https://github.com/dpwe/audfprint
@@ -66,8 +66,6 @@ issn={1573-7721},
 doi={10.1007/s11042-025-21080-x},
 url={https://doi.org/10.1007/s11042-025-21080-x}
 }
-
-
 ```
 
 # Acknowledgements
